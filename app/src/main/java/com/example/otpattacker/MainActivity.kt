@@ -11,6 +11,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.otpattacker.ui.MainScreen
 import com.example.otpattacker.ui.theme.OTPAttackerTheme
 import com.example.otpattacker.viewmodel.OtpViewModel
+import com.example.otpattacker.ui.theme.OTPAttackerTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
