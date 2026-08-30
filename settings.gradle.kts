@@ -6,10 +6,11 @@ pluginManagement {
     }
 }
 dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
     }
 }
-rootProject.name = "OTPAttackerApp"
+rootProject.name = "RexTools"
 include(":app")

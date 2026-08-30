@@ -19,11 +19,10 @@ android {
 
     buildFeatures {
         compose = true
-        viewBinding = false
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.4"
+        kotlinCompilerExtensionVersion = "1.5.8" // <- GANTI DARI 1.5.4 JADI 1.5.8
     }
 
     compileOptions {
@@ -33,6 +32,10 @@ android {
 
     kotlinOptions {
         jvmTarget = "17"
+    }
+    
+    kapt {
+        correctErrorTypes = true // <- TAMBAH INI biar errornya kebaca
     }
 }
 
@@ -64,7 +67,7 @@ dependencies {
     kapt("com.google.dagger:hilt-compiler:2.48")
     implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
 
-    // room (opsional)
+    // room
     implementation("androidx.room:room-runtime:2.6.0")
     kapt("androidx.room:room-compiler:2.6.0")
     implementation("androidx.room:room-ktx:2.6.0")
